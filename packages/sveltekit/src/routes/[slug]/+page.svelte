@@ -9,8 +9,6 @@
   }
 
   $: page = data.page
-
-  $: console.log(page)
 </script>
 
 <Metadata {page} />
