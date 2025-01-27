@@ -1,0 +1,33 @@
+
+
+:root {
+    /* Colors */
+    --background-color: #ffffff;
+    --foreground-color: #000000;
+    /* Typo */
+    --font-family-normal: times, serif;
+    --font-size-normal: 18px;
+    --font-size-mid: 22px;
+    --font-size-large: 38px;
+    /* Spacing */
+    --outer-margin: 20px;
+    --inner-margin: 10px;
+    --total-margin: calc(var(--outer-margin) + var(--inner-margin));
+    --double-total-margin: calc(var(--total-margin) * 2);
+    /* Z-index */
+    --z-nav: 100;
+    --z-modal: 1000;
+    --z-phone-nav: 10000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 20px;
+    font-family: var(--font-family-normal);
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+    font-size: var(--font-size-normal);
+}

@@ -1,0 +1,22 @@
+{
+  "name": "sybil.gg",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev:sveltekit": "pnpm --filter sveltekit dev",
+    "dev:sanity": "pnpm --filter sanity start",
+    "dev": "mprocs",
+    "deploy:sanity": "pnpm --filter sanity deploy",
+    "typegen:sanity": "pnpm --filter sanity typegen"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "mprocs": "^0.7.2",
+    "typescript": "^5.7.3"
+  }
+}
