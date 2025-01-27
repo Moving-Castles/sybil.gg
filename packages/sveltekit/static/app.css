@@ -30,4 +30,9 @@ body, html {
     background-color: var(--background-color);
     color: var(--foreground-color);
     font-size: var(--font-size-normal);
+    line-height: 1.3em;
+}
+
+img {
+    max-width: 60%;
 }
