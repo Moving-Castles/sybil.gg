@@ -2,11 +2,19 @@
 
 :root {
     /* Colors */
-    --background-color: #ffffff;
-    --foreground-color: #000000;
+    /* --background-color: #000000;
+    --foreground-color: #ffffff; */
+
+    --background-color: #3c3c3c;
+    --foreground-color: #d4d4d4;
+/* 
+    --background-color: #d4d4d4;
+    --foreground-color: #3c3c3c; */
+
     /* Typo */
-    --font-family-normal: times, serif;
-    --font-size-normal: 18px;
+    --font-family-normal: "T-Star", "Blender", times, serif;
+    /* --font-family-normal:"Blender", times, serif; */
+    --font-size-normal: 20px;
     --font-size-mid: 22px;
     --font-size-large: 38px;
     /* Spacing */
@@ -22,17 +30,45 @@
 
 * {
     box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body, html {
-    margin: 20px;
     font-family: var(--font-family-normal);
     background-color: var(--background-color);
     color: var(--foreground-color);
     font-size: var(--font-size-normal);
     line-height: 1.3em;
+    margin: 0;
+    padding: 0;
 }
 
 img {
     max-width: 60%;
+}
+
+a {
+    color: var(--foreground-color);
+    font-weight: bold;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+::selection {
+    background-color: var(--foreground-color);
+    color: var(--background-color);
+}
+
+::-moz-selection {
+    background-color: var(--foreground-color);
+    color: var(--background-color);
+}
+
+strong {
+    background-color: var(--foreground-color);
+    color: var(--background-color);
 }

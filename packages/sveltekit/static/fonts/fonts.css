@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Blender';
+    src: url('/fonts/blender/BlenderTrial-Book.woff2') format('woff2'),
+        url('/fonts/blender/BlenderTrial-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blender';
+    src: url('/fonts/blender/BlenderTrial-Bold.woff2') format('woff2'),
+        url('/fonts/blender/BlenderTrial-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blender';
+    src: url('/fonts/blender/BlenderTrial-Medium.woff2') format('woff2'),
+        url('/fonts/blender/BlenderTrial-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'T-Star';
+    src: url('/fonts/t-star/T-Star-TWTrial-Bold.woff2') format('woff2'),
+        url('/fonts/t-star/T-Star-TWTrial-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'T-Star';
+    src: url('/fonts/t-star/T-Star-TWTrial-Regular.woff2') format('woff2'),
+        url('/fonts/t-star/T-Star-TWTrial-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

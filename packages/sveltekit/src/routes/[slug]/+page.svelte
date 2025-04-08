@@ -13,8 +13,15 @@
 
 <Metadata {page} />
 
-<h1>{page?.title ?? ""}</h1>
-
-<div class="content">
+<div class="container">
   {@html renderBlockText(page?.content?.content ?? [])}
 </div>
+
+<style lang="scss">
+  .container {
+    color: var(--foreground-color);
+    max-width: 55ch;
+    padding-bottom: 10em;
+    line-height: 1.2em;
+  }
+</style>
