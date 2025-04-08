@@ -17,7 +17,9 @@
 <div class="container">
   <p class="letter-space-neg-1">⌂SYBIL⌂SYBIL⌂SYBIL⌂SYBIL⌂</p>
   <p class="letter-space-neg-1">╬╫╬╫╬╫╬╫╬╫╬╫╬╫╬╫╬╫╬</p>
-  <p class="letter-space-pos">▒▒▓UNDER CONSTRUCTION▓▒▒</p>
+  <!-- <p class="letter-space-pos">▒▒▓UNDER CONSTRUCTION▓▒▒</p> -->
+  <p class="letter-space-pos">UNDER CONSTRUCTION</p>
+  <p class="letter-space-neg-1">╬╫╬╫╬╫╬╫╬╫╬╫╬╫╬╫╬╫╬</p>
   <p class="letter-space-neg-1">
     <a href="mailto:info@sybil.gg">►info@sybil.gg</a>
   </p>
@@ -67,10 +69,14 @@
     outline: none;
     padding-inline: 5px;
     height: 1.6em;
-    border-radius: 0;
+    border-radius: 0 !important;
 
     &::placeholder {
       color: var(--background-color);
+    }
+
+    @media (max-width: 768px) {
+      font-size: 0.8em;
     }
   }
 
@@ -83,12 +89,16 @@
     outline: none;
     cursor: pointer;
     height: 1.6em;
-    border-radius: 0;
+    border-radius: 0 !important;
 
     &:hover,
     &:active {
       background-color: var(--foreground-color-darker);
       color: var(--background-color);
+    }
+
+    @media (max-width: 768px) {
+      font-size: 0.8em;
     }
   }
 
