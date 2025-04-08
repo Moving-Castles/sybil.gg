@@ -10,6 +10,7 @@
 
     --background-color: #ff2f00;
     --foreground-color: #c8c8c8;
+    --foreground-color-darker: #a9a9a9;
 /* 
     --background-color: #d4d4d4;
     --foreground-color: #3c3c3c; */
@@ -17,7 +18,7 @@
     /* Typo */
     --font-family-normal: "Arial Narrow", sans-serif;
     --font-size-normal: 48px;
-    --font-size-small: 32px;
+    --font-size-small: 24px;
     --font-size-mid: 22px;
     --font-size-large: 38px;
     /* Spacing */
@@ -55,10 +56,10 @@ img {
 a {
     color: var(--foreground-color);
     text-decoration: none;
+}
 
-    &:hover {
-        text-decoration: none;
-    }
+a:hover {
+    color: var(--foreground-color-darker);
 }
 
 ::selection {

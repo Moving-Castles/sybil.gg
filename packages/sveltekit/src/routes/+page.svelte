@@ -67,6 +67,7 @@
     outline: none;
     padding-inline: 5px;
     height: 1.6em;
+    border-radius: 0;
 
     &::placeholder {
       color: var(--background-color);
@@ -82,11 +83,12 @@
     outline: none;
     cursor: pointer;
     height: 1.6em;
+    border-radius: 0;
 
     &:hover,
     &:active {
-      background-color: var(--background-color);
-      color: var(--foreground-color);
+      background-color: var(--foreground-color-darker);
+      color: var(--background-color);
     }
   }
 
