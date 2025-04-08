@@ -5,6 +5,6 @@ import type { Page } from '@sanity-types';
 
 /** @type {import('./$types').PageLoad} */
 export const load = (async ({params}) => {
-    const page: Page = await loadData(queries.singlePage, {slug: "curator"});
+    const page: Page = await loadData(queries.singlePage, {slug: "landing-page"});
     return { page }
 }) satisfies PageLoad;

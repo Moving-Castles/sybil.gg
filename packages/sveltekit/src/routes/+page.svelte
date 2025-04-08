@@ -1,29 +1,96 @@
 <script lang="ts">
-  import type { Page } from "@sanity-types"
-  import { renderBlockText } from "$lib/modules/sanity"
+  // import type { Page } from "@sanity-types"
 
-  import Metadata from "$lib/components/Metadata/Metadata.svelte"
+  // import Metadata from "$lib/components/Metadata/Metadata.svelte"
 
-  export let data: {
-    page: Page
-  }
+  // export let data: {
+  //   page: Page
+  // }
 
-  console.log(data)
+  // console.log(data)
 
-  $: page = data.page
+  // $: page = data.page
 </script>
 
-<Metadata {page} />
+<!-- <Metadata {page} /> -->
 
 <div class="container">
-  {@html renderBlockText(page?.content?.content ?? [])}
+  <p class="letter-space-neg-1">⌂SYBIL⌂SYBIL⌂SYBIL⌂SYBIL⌂</p>
+  <p class="letter-space-neg-1">╬╫╬╫╬╫╬╫╬╫╬╫╬╫╬╫╬╫╬</p>
+  <p class="letter-space-pos">▒▒▓UNDER CONSTRUCTION▓▒▒</p>
+  <p class="letter-space-neg-1">
+    <a href="mailto:info@sybil.gg">►info@sybil.gg</a>
+  </p>
+  <p class="form">
+    <input type="text" placeholder="mailing list" />
+    <button>&lt;submit&gt;</button>
+  </p>
+  <p class="letter-space-neg-4">
+    ☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺
+  </p>
 </div>
 
 <style lang="scss">
   .container {
     color: var(--foreground-color);
-    max-width: 55ch;
-    padding-bottom: 10em;
-    line-height: 1.2em;
+
+    font-size: var(--font-size-normal);
+
+    @media (max-width: 768px) {
+      font-size: var(--font-size-small);
+    }
+  }
+
+  .letter-space-neg-1 {
+    letter-spacing: -0.1em;
+  }
+
+  .letter-space-pos-1 {
+    letter-spacing: 0.1em;
+  }
+
+  .letter-space-neg-4 {
+    letter-spacing: -0.7em;
+  }
+
+  p {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  input {
+    font-size: 1em;
+    font-family: var(--font-family-normal);
+    background-color: var(--foreground-color);
+    color: var(--background-color);
+    border: none;
+    outline: none;
+    padding-inline: 5px;
+    height: 1.6em;
+
+    &::placeholder {
+      color: var(--background-color);
+    }
+  }
+
+  button {
+    font-size: 1em;
+    font-family: var(--font-family-normal);
+    background-color: var(--foreground-color);
+    color: var(--background-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 1.6em;
+
+    &:hover,
+    &:active {
+      background-color: var(--background-color);
+      color: var(--foreground-color);
+    }
+  }
+
+  .form {
+    margin-top: 0.5em;
   }
 </style>
