@@ -15,13 +15,13 @@
 <!-- <Metadata {page} /> -->
 
 <div class="container">
-  <p class="letter-space-neg-1">⌂SYBIL⌂SYBIL⌂SYBIL⌂SYBIL⌂</p>
-  <p class="letter-space-neg-1">╬╫╬╫╬╫╬╫╬╫╬╫╬╫╬╫╬╫╬</p>
-  <!-- <p class="letter-space-pos">▒▒▓UNDER CONSTRUCTION▓▒▒</p> -->
   <p class="letter-space-pos">UNDER CONSTRUCTION</p>
   <p class="letter-space-neg-1">╬╫╬╫╬╫╬╫╬╫╬╫╬╫╬╫╬╫╬</p>
   <p class="letter-space-neg-1">
-    <a href="mailto:info@sybil.gg">►info@sybil.gg</a>
+    <a href="/call-for-residents">►!!! CALL FOR RESIDENTS</a>
+  </p>
+  <p class="letter-space-neg-4">
+    ☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺
   </p>
   <p class="form">
     <input type="text" placeholder="mailing list" />
@@ -30,36 +30,13 @@
   <p class="letter-space-neg-4">
     ☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺☺
   </p>
+  <p class="letter-space-neg-1 small">
+    <a href="mailto:info@sybil.gg">☼ info@sybil.gg</a>
+  </p>
+  <p class="letter-space-neg-1 small">☼ Lechnerdamm 13, 10999 Berlin</p>
 </div>
 
 <style lang="scss">
-  .container {
-    color: var(--foreground-color);
-
-    font-size: var(--font-size-normal);
-
-    @media (max-width: 768px) {
-      font-size: var(--font-size-small);
-    }
-  }
-
-  .letter-space-neg-1 {
-    letter-spacing: -0.1em;
-  }
-
-  .letter-space-pos-1 {
-    letter-spacing: 0.1em;
-  }
-
-  .letter-space-neg-4 {
-    letter-spacing: -0.7em;
-  }
-
-  p {
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-
   input {
     font-size: 1em;
     font-family: var(--font-family-normal);
@@ -104,5 +81,9 @@
 
   .form {
     margin-top: 0.5em;
+  }
+
+  .small {
+    // font-size: 0.5em;
   }
 </style>

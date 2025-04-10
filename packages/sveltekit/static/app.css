@@ -37,7 +37,7 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    line-height: 1.6em;
+    line-height: 1.2em;
 }
 
 body, html {
@@ -47,6 +47,10 @@ body, html {
     font-size: var(--font-size-normal);
     margin: 0;
     padding: 0;
+
+    @media (max-width: 768px) {
+        font-size: var(--font-size-small);
+    }
 }
 
 img {
@@ -75,4 +79,21 @@ a:hover {
 strong {
     background-color: var(--foreground-color);
     color: var(--background-color);
+}
+
+.letter-space-neg-1 {
+    letter-spacing: -0.1em;
+}
+
+.letter-space-pos-1 {
+    letter-spacing: 0.1em;
+    }
+
+.letter-space-neg-4 {
+    letter-spacing: -0.7em;
+}
+
+p {
+    margin-bottom: 0.4em;
+    margin-top: 0;
 }

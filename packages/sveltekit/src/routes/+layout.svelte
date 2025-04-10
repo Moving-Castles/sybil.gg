@@ -3,19 +3,13 @@
 </script>
 
 <main>
-  <div class="column center">
-    <slot></slot>
-  </div>
+  <p class="letter-space-neg-1"><a href="/">⌂SYBIL⌂SYBIL⌂SYBIL⌂SYBIL⌂</a></p>
+  <p class="letter-space-neg-1">╬╫╬╫╬╫╬╫╬╫╬╫╬╫╬╫╬╫╬</p>
+  <slot></slot>
 </main>
 
 <style lang="scss">
   main {
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-
-    .column {
-      padding: 5px;
-    }
+    padding: 5px;
   }
 </style>

@@ -19,9 +19,7 @@
 
 <style lang="scss">
   .container {
-    color: var(--foreground-color);
-    max-width: 55ch;
-    padding-bottom: 10em;
-    line-height: 1.2em;
+    max-width: 45ch;
+    padding-bottom: 6em;
   }
 </style>
