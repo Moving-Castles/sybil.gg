@@ -1,18 +1,8 @@
 <script lang="ts">
-  // import type { Page } from "@sanity-types"
-
-  // import Metadata from "$lib/components/Metadata/Metadata.svelte"
-
-  // export let data: {
-  //   page: Page
-  // }
-
-  // console.log(data)
-
-  // $: page = data.page
+  import Metadata from "$lib/components/Metadata/Metadata.svelte"
 </script>
 
-<!-- <Metadata {page} /> -->
+<Metadata />
 
 <div class="container">
   <p class="letter-space-pos">UNDER CONSTRUCTION</p>
@@ -86,9 +76,5 @@
 
   .form {
     margin-top: 0.5em;
-  }
-
-  .small {
-    // font-size: 0.5em;
   }
 </style>
