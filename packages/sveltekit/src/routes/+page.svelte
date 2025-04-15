@@ -28,7 +28,7 @@
       ☼ instagram.com/sybil.gg
     </a>
   </p>
-  <p class="letter-space-neg-1 small">☼ Lechnerdamm 13, 10999 Berlin</p>
+  <p class="letter-space-neg-1 small">☼ Leuschnerdamm 13, 10999 Berlin</p>
 </div>
 
 <style lang="scss">
