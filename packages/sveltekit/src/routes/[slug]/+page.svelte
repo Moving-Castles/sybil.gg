@@ -20,6 +20,6 @@
 <style lang="scss">
   .container {
     max-width: 45ch;
-    padding-bottom: 6em;
+    padding-bottom: 2em;
   }
 </style>

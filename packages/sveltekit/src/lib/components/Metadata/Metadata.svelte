@@ -1,14 +1,14 @@
 <script lang="ts">
   import type { Page } from "@sanity-types"
   import { isEmpty, truncate } from "lodash-es"
-  import { toPlainText, urlFor } from "$lib/modules/sanity"
+  import { toPlainText } from "$lib/modules/sanity"
 
   export let page: Page | undefined = undefined
 
   const defaultDescription =
-    "Sybil is a space for creative game design opening in early March 2025 in Berlin."
+    "Sybil is a space for weird gaming and speculative worlding in Berlin."
   const defaultTitle = "SYBIL"
-  const defaultImage = ""
+  const defaultImage = "https://sybil.gg/images/sybil-meta.png"
 
   // Helper function to safely extract content
   function safeContent(content: any, fallback: string): string {
@@ -31,9 +31,9 @@
     )
   })()
 
-  //   $: image = page?.mainImage
-  //     ? urlFor(page.mainImage).quality(80).height(1200).width(1200).url()
-  //     : defaultImage
+  // $: image = page?.mainImage
+  //   ? urlFor(page.mainImage).quality(80).height(1200).width(1200).url()
+  //   : defaultImage
 
   $: image = defaultImage
 </script>
