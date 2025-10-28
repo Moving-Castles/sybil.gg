@@ -3,7 +3,7 @@
   import { isEmpty, truncate } from "lodash-es"
   import { toPlainText } from "$lib/modules/sanity"
 
-  export let page: Page | undefined = undefined
+  let { page = undefined }: { page?: Page } = $props()
 
   const defaultDescription =
     "Sybil is a space for weird gaming and speculative worlding in Berlin."
@@ -15,12 +15,12 @@
     return !isEmpty(content) ? toPlainText(content) : fallback
   }
 
-  $: title = (() => {
+  const title = $derived.by(() => {
     const titleField = page?.title
     return titleField ? `${titleField} | ${defaultTitle}` : defaultTitle
-  })()
+  })
 
-  $: description = (() => {
+  const description = $derived.by(() => {
     const contentField = page?.content?.content ?? []
     return truncate(
       safeContent(contentField, safeContent(contentField, defaultDescription)),
@@ -29,13 +29,9 @@
         separator: " ",
       }
     )
-  })()
+  })
 
-  // $: image = page?.mainImage
-  //   ? urlFor(page.mainImage).quality(80).height(1200).width(1200).url()
-  //   : defaultImage
-
-  $: image = defaultImage
+  const image = $derived(defaultImage)
 </script>
 
 <svelte:head>

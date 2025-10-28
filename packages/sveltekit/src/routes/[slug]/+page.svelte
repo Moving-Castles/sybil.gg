@@ -4,11 +4,9 @@
 
   import Metadata from "$lib/components/Metadata/Metadata.svelte"
 
-  export let data: {
-    page: Page
-  }
+  let { data }: { data: { page: Page } } = $props()
 
-  $: page = data.page
+  const page = $derived(data.page)
 </script>
 
 <Metadata {page} />
