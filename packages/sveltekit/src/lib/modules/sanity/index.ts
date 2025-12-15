@@ -1,6 +1,6 @@
 import {createClient} from '@sanity/client'
 import {toHTML, type PortableTextComponents} from '@portabletext/to-html'
-import imageUrlBuilder from '@sanity/image-url'
+import {createImageUrlBuilder} from '@sanity/image-url'
 import {SANITY_ID} from '$lib/constants'
 
 export const client = createClient({
@@ -11,7 +11,7 @@ export const client = createClient({
   apiVersion: '2024-09-09',
 })
 
-const builder = imageUrlBuilder(client)
+const builder = createImageUrlBuilder(client)
 
 export const urlFor = (source: any) => builder.image(source)
 
