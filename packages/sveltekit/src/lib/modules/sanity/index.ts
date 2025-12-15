@@ -11,7 +11,18 @@ export const client = createClient({
   apiVersion: '2024-09-09',
 })
 
+const builder = imageUrlBuilder(client)
+
+export const urlFor = (source: any) => builder.image(source)
+
 const components: PortableTextComponents = {
+  types: {
+    image: ({value}) => {
+      const url = urlFor(value).url()
+      const alt = value.alt || ''
+      return `<img class="content-image" src="${url}" alt="${alt}" loading="lazy" />`
+    },
+  },
   marks: {
     link: ({children, value}) =>
       `<a target="_blank" rel="noreferrer" href="${value?.href}">${children}</a>`,
@@ -38,10 +49,6 @@ export const toPlainText = (blocks: any) => {
     })
     .join('\n\n')
 }
-
-const builder = imageUrlBuilder(client)
-
-export const urlFor = (source: any) => builder.image(source)
 
 export const loadData = async (query: string, params: any) => {
   try {
