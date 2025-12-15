@@ -1,14 +1,13 @@
 <script lang="ts">
-  import type { Page } from "@sanity-types"
-  import { isEmpty, truncate } from "lodash-es"
-  import { toPlainText } from "$lib/modules/sanity"
+  import type {Page} from '@sanity-types'
+  import {isEmpty, truncate} from 'lodash-es'
+  import {toPlainText} from '$lib/modules/sanity'
 
-  let { page = undefined }: { page?: Page } = $props()
+  let {page = undefined}: {page?: Page} = $props()
 
-  const defaultDescription =
-    "Sybil is a space for weird gaming and speculative worlding in Berlin."
-  const defaultTitle = "SYBIL"
-  const defaultImage = "https://sybil.gg/images/sybil-meta.png"
+  const defaultDescription = 'Sybil is a space for weird gaming and speculative worlding in Berlin.'
+  const defaultTitle = 'SYBIL'
+  const defaultImage = 'https://sybil.gg/images/sybil-meta.png'
 
   // Helper function to safely extract content
   function safeContent(content: any, fallback: string): string {
@@ -22,13 +21,10 @@
 
   const description = $derived.by(() => {
     const contentField = page?.content?.content ?? []
-    return truncate(
-      safeContent(contentField, safeContent(contentField, defaultDescription)),
-      {
-        length: 160,
-        separator: " ",
-      }
-    )
+    return truncate(safeContent(contentField, safeContent(contentField, defaultDescription)), {
+      length: 160,
+      separator: ' ',
+    })
   })
 
   const image = $derived(defaultImage)

@@ -1,10 +1,10 @@
 <script lang="ts">
-  import type { Page } from "@sanity-types"
-  import { renderBlockText } from "$lib/modules/sanity"
+  import type {Page} from '@sanity-types'
+  import {renderBlockText} from '$lib/modules/sanity'
 
-  import Metadata from "$lib/components/Metadata/Metadata.svelte"
+  import Metadata from '$lib/components/Metadata/Metadata.svelte'
 
-  let { data }: { data: { page: Page } } = $props()
+  let {data}: {data: {page: Page}} = $props()
 
   const page = $derived(data.page)
 </script>
